@@ -1,0 +1,31 @@
+{
+  "name": "Node.js & TypeScript",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:0-20",
+  "forwardPorts": [
+    5173
+  ],
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers-contrib/features/homebrew-package:1": {
+      "package": "vale"
+    }
+  },
+  "postCreateCommand": {
+    "npm": "npm install",
+    "vale": "vale sync"
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "git.autofetch": "all"
+      },
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "christian-kohler.npm-intellisense",
+        "github.vscode-github-actions",
+        "unifiedjs.vscode-mdx",
+        "chrischinchilla.vale-vscode"
+      ]
+    }
+  }
+}
