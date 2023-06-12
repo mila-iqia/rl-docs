@@ -6,7 +6,6 @@ export default defineConfig({
   description: "Mila Reinforcement Learning Documentation",
   lang: "en-US",
   lastUpdated: true,
-  base: "/rl-docs/",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: {
